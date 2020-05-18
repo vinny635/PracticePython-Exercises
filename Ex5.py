@@ -15,3 +15,17 @@ for element in b:
         c.append(element)
 
 print(c)
+
+# Extras
+# Randomly generate two lists to test this
+# Write this in one line of Python
+import random
+
+a = [random.randrange(1, 41) for _ in range(0, random.randint(1, 20))]
+b = [random.randrange(1, 41) for _ in range(0, random.randint(1, 20))]
+c = []
+
+print(a)
+print(b)
+
+[c.append(element) for element in b if element in a], print(c)
